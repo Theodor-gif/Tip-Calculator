@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(229, 230, 230);
+  overflow-x: hidden;
+}
+
+#header-container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  color: white;
+  font-size: 1.4rem;
+  background-image: url("./assets/barcode-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#header-container > h1 {
+  background-color: transparent;
+  padding-top: 10%;
+}
+
+#instructions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#instructions-title {
+  font-size: 1.3rem;
+  margin-top: 10%;
+}
+
+#instructions-details {
+  width: 80%;
+  text-align: center;
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 10% auto 0 auto;
+  gap: 5px;
+}
+
+.form-label {
+  font-size: 1.4rem;
+}
+
+.form-input {
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 12.5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+#required-container {
+  width: 85vw;
+  margin: 5% auto 0 auto;
+}
+
+#required-title {
+  font-size: 1.3rem;
+  margin-bottom: 5%;
+}
+
+#required-list {
+  font-size: 1.1rem;
+}
+
+.required-item {
+  margin-bottom: 2.5%;
+  list-style-type: none;
+  display: flex;
+}
+
+.required-item::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.8rem;
+  background: url("./assets/important-icon.png") no-repeat center / contain;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 7.5% 0;
+}
+
+.button {
+  padding: 10px 5px;
+  width: 150px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#result-container {
+  width: 90vw;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5%;
+  box-shadow: 5px 6px 10px 1px #494444;
+}
+
+.container {
+  display: flex;
+  gap: 5px;
+}
+
+.result-label {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.result-input {
+  flex: 1;
+  text-align: center;
+  border: none;
+  font-size: 1.1rem;
+}
+
+#footer-container {
+  margin: 15% 0 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

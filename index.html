@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="tip-calculator.style.css" />
+    <script src="tip-calculator.js" defer></script>
+  </head>
+  <body>
+    <header id="header-container">
+      <h1>Tip Calculator</h1>
+    </header>
+    <main id="main-container">
+      <section id="instructions-container">
+        <h2 id="instructions-title">Instructions</h2>
+        <p id="instructions-details">
+          Split the bill with your friends and add a tip. The app calculates how
+          much each person needs to pay.
+        </p>
+      </section>
+      <section id="form-container">
+        <article id="form">
+          <label class="form-label" for="people">People <span>*</span></label>
+          <input
+            class="form-input"
+            id="people"
+            type="text"
+            name="people"
+            placeholder="People amount"
+          />
+          <label class="form-label" for="bill">Bill <span>*</span></label>
+          <input
+            class="form-input"
+            id="bill"
+            type="text"
+            name="bill"
+            placeholder="100.00"
+          />
+          <label class="form-label" for="tip">Tip <span>*</span></label>
+          <input
+            class="form-input"
+            id="tip"
+            type="text"
+            name="tip"
+            placeholder="15.00"
+          />
+        </article>
+        <article id="required-container">
+          <h3 id="required-title">Required <span>*</span></h3>
+          <ul id="required-list">
+            <li class="required-item">
+              People number can not be decimal number.
+            </li>
+            <li class="required-item">
+              The inputs accept only integer numbers.
+            </li>
+            <li class="required-item">Fill all the inputs.</li>
+          </ul>
+        </article>
+        <article id="buttons-container">
+          <button class="button" id="submit-button" type="button">
+            CHECK RESULT
+          </button>
+          <button class="button" id="reset-button" type="button">
+            RESET RESULT
+          </button>
+        </article>
+      </section>
+      <section id="result-container">
+        <article class="container">
+          <label class="result-label" for="total-amount">Total :</label>
+          <input
+            id="total-amount"
+            class="result-input"
+            readonly
+            type="text"
+            name="total-amount"
+            placeholder="No data exists"
+          />
+        </article>
+        <article class="container">
+          <label class="result-label" for="person-amount"
+            >Each person pays :</label
+          >
+          <input
+            id="person-amount"
+            class="result-input"
+            readonly
+            type="text"
+            name="person-amount"
+            placeholder="No data exists"
+          />
+        </article>
+      </section>
+    </main>
+    <footer id="footer-container">
+      <small><span>&copy;</span> Created by Theodoros Mitropoulos</small>
+    </footer>
+  </body>
+</html>
