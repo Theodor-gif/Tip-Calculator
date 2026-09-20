@@ -66,7 +66,6 @@ function inputTypeError() {
     isNaN(tipValue) ||
     Number(people) <= 0
   ) {
-    console.log("error");
     totalAmount.value = "";
     eachPersonAmount.value = "";
     return true;
